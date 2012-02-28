@@ -36,4 +36,10 @@ public class SchoolClass {
 		this.classGroups = classGroups;
 	}
 
+	public List<Subject> getClassSchedule() {
+		List<Subject> res = new ArrayList<Subject>();
+
+		return res;
+	}
+
 }
