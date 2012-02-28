@@ -1,19 +1,25 @@
 package schoolschedule;
 
 public class Room {
-	int number;
 
+	private static int number;
+	
 	public Room(int number) {
 		super();
 		this.number = number;
 	}
 
-	public int getRoom() {
+	public static int getRoomNumber() {
 		return number;
 	}
 
-	public void setRoom(int number) {
-		this.number = number;
+	public static void setRoomNumber(int number) {
+		Room.number = number;
+	}
+
+	public static void print() {
+		System.out.println(number);
+		
 	}
 
 }

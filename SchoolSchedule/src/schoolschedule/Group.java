@@ -3,21 +3,22 @@ package schoolschedule;
 import java.util.List;
 
 public class Group {
-	private char groupID;
+	
 	private List<Subject> subjects;
-
+	private static char groupID;
+	
 	public Group(char groupID, List<Subject> subjects) {
 		super();
 		this.groupID = groupID;
 		this.subjects = subjects;
 	}
-
-	public char getGroupID() {
+	
+	public static char getGroupID() {
 		return groupID;
 	}
-
-	public void setGroupID(char groupID) {
-		this.groupID = groupID;
+	
+	public static void setGroupID(char groupID) {
+		Group.groupID = groupID;
 	}
 
 	public List<Subject> getSubjects() {
@@ -27,5 +28,9 @@ public class Group {
 	public void setSubjects(List<Subject> subjects) {
 		this.subjects = subjects;
 	}
-
+	
+	public static void print() {
+		System.out.println(groupID);
+		
+	}
 }

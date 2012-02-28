@@ -1,6 +1,7 @@
 package schoolschedule;
 
 public class Teacher {
+
 	private String name;
 
 	public Teacher(String name) {
@@ -16,4 +17,5 @@ public class Teacher {
 		this.name = name;
 	}
 
+		
 }
