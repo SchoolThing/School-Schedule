@@ -29,23 +29,27 @@ public class Schedule {
 		printClasses();
 	}
 
-	public void generate(List<Subject> sub) {
-		int daySize = sub.size() / 5;
-		int indexReached=0;
-		
-		List<Subject> monday = new ArrayList<Subject>();
-		List<Subject> tuesday= new ArrayList<Subject>();
-		List<Subject> wednesday= new ArrayList<Subject>();
-		List<Subject> thursday= new ArrayList<Subject>();
-		List<Subject> friday= new ArrayList<Subject>();
-		for(int i=0; i<daySize; i++){
-			monday.add(sub.get(indexReached));
-			tuesday.add(sub.get(indexReached+2));
-			wednesday.add(sub.get(indexReached+4));
-			thursday.add(sub.get(indexReached+6));
-			friday.add(sub.get(indexReached+8));
+	public void generate(SchoolClass scl, List<Subject> sub) {
+
+		for (int i = 0; i < scl.getClassGroups().size(); i++) {
+			scl.getClassGroups().get(i).setSubjects(sub);
 		}
-		
+
+		List<Group> tmpGrps = new ArrayList<Group>(scl.getClassGroups());
+
+		for (int i = 0; i < sub.size() - 1; i++) {
+			for (int j = 0; j < tmpGrps.size() - 1; j++) {
+				if (tmpGrps.get(j).getSubjects().get(i) == tmpGrps.get(j + 1)
+						.getSubjects().get(i)) {
+					Subject tmp = tmpGrps.get(j + 1).getSubjects().get(i);
+					Subject tmp2 = tmpGrps.get(j + 1).getSubjects().get(i + 1);
+					tmpGrps.get(j + 1).setSubject(i, tmp2);
+					tmpGrps.get(j + 1).setSubject(i + 1, tmp);
+				}
+
+			}
+		}
+		scl.setClassGroups(tmpGrps);
 	}
 
 }

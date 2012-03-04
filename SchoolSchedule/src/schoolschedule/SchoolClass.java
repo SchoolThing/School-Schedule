@@ -35,6 +35,10 @@ public class SchoolClass {
 	public void setClassGroups(List<Group> classGroups) {
 		this.classGroups = classGroups;
 	}
+	
+	public void setGroupSubject(Subject sub, int i, int index){
+		classGroups.get(i).setSubject(index, sub);
+	}
 
 	public List<Subject> getClassSchedule() {
 		List<Subject> res = new ArrayList<Subject>();

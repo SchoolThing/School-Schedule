@@ -38,8 +38,7 @@ public class Subject {
 	}
 
 	public void print() {
-		System.out.print(name + " " + room.getRoomNumber() + " "
-				+ teacher.getName() + "   ");
+		System.out.print(name + " " + room.getRoomNumber() + " "+ teacher.getName() + "\t  ");
 	}
 
 }

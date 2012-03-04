@@ -29,8 +29,12 @@ public class Group {
 		this.subjects = subjects;
 	}
 	
+	public void setSubject(int index, Subject sub){
+		subjects.set(index, sub);
+	}
+	
 	public void printID() {
-		System.out.print(groupID + "\t\t");
+		System.out.print(groupID + "\t\t	");
 	}
 
 	public void printGroupSubject(int index) {
