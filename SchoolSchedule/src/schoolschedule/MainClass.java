@@ -8,16 +8,19 @@ public class MainClass {
 	public static void main(String[] args) {
 		List<Subject> subjects = new ArrayList<Subject>();
 
-		for (int i = 0; i < 10; i++) {
-			Room tmpRoom = new Room(i + 11);
-			Teacher tmpTeacher = new Teacher("PG" + i + 1);
-			Subject tmpSub = new Subject("Math" + i, tmpRoom, tmpTeacher);
-			subjects.add(tmpSub);
-		}
+		
+			Room tmpRoom1 = new Room(11);
+			Room tmpRoom2 = new Room(12);
+			Teacher tmpTeacher1 = new Teacher("Janet");
+			Teacher tmpTeacher2 = new Teacher("Mitova");
+			Subject tmpSub = new Subject("Math", tmpRoom1, tmpTeacher1);
+			Subject tmpSub = new Subject("BEL", tmpRoom2, tmpTeacher2);
+			subjects.add(tmpSub1);
+			subjects.add(tmpSub2);
 
 		List<Group> groups = new ArrayList<Group>();
 
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 2; i++) {
 			int c = (int) 'A' + i;
 			char b = (char) c;
 			Group tmpGroup = new Group(b, subjects);
