@@ -1,10 +1,10 @@
 package schoolschedule;
 
 public class Subject {
-	
-	private static String name;
-	private static  Room room;
-	private static Teacher teacher;
+
+	private String name;
+	private Room room;
+	private Teacher teacher;
 
 	public Subject(String name, Room room, Teacher teacher) {
 		super();
@@ -37,9 +37,9 @@ public class Subject {
 		this.teacher = teacher;
 	}
 
-	public static void print() {
-		System.out.println(name +room.getRoomNumber()+ teacher);
-		
+	public void print() {
+		System.out.print(name + " " + room.getRoomNumber() + " "
+				+ teacher.getName() + "   ");
 	}
 
 }

@@ -31,7 +31,8 @@ public class MainClass {
 		
 		Schedule schedule = new Schedule(classes);
 		schedule.classes.get(0).getClassSchedule();
-		schedule.generate();
+		schedule.generate(subjects);
+		schedule.classes.get(0).setGroupSchedule(subjects, 1);
 		schedule.print();
 	}
 }

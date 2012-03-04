@@ -3,11 +3,10 @@ package schoolschedule;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class SchoolClass {
 
-	private static int classNumber;
-	private static List<Group> classGroups;
+	private int classNumber;
+	private List<Group> classGroups;
 
 	public SchoolClass() {
 		super();
@@ -36,21 +35,33 @@ public class SchoolClass {
 	public void setClassGroups(List<Group> classGroups) {
 		this.classGroups = classGroups;
 	}
-	
+
 	public List<Subject> getClassSchedule() {
 		List<Subject> res = new ArrayList<Subject>();
-		
+
 		res = classGroups.get(0).getSubjects();
-		
-		return res; 
+
+		return res;
 	}
 
-	public static void print() {
-		System.out.println(classNumber);
-		for(Group tmpGroup:classGroups){
-			tmpGroup.print();
-		}
-		
+	public void setGroupSchedule(List<Subject> sub, int index) {
+		classGroups.get(index - 1).setSubjects(sub);
 	}
+
+	public void print() {
+		List<Group> tmpGrps = new ArrayList<Group>();
+		System.out.println("\t\t\t     " + classNumber + "\t" + "\n");
+		for (Group tmpGroup : classGroups) {
+			tmpGroup.printID();
+			tmpGrps.add(tmpGroup);
+		}	
+		for(int i=0; i<tmpGrps.get(0).getSubjects().size(); i++){
+			System.out.println();
+			for(int j=0; j < tmpGrps.size(); j++){
+				tmpGrps.get(j).printGroupSubject(i);
+			}
+		}
+	}
+
 
 }

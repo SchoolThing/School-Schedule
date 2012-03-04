@@ -5,7 +5,7 @@ import java.util.List;
 public class Group {
 	
 	private List<Subject> subjects;
-	private static char groupID;
+	private char groupID;
 	
 	public Group(char groupID, List<Subject> subjects) {
 		super();
@@ -13,12 +13,12 @@ public class Group {
 		this.subjects = subjects;
 	}
 	
-	public static char getGroupID() {
+	public char getGroupID() {
 		return groupID;
 	}
 	
-	public static void setGroupID(char groupID) {
-		Group.groupID = groupID;
+	public void setGroupID(char groupID) {
+		this.groupID = groupID;
 	}
 
 	public List<Subject> getSubjects() {
@@ -29,8 +29,12 @@ public class Group {
 		this.subjects = subjects;
 	}
 	
-	public static void print() {
-		System.out.println(groupID);
-		
+	public void printID() {
+		System.out.print(groupID + "\t\t");
+	}
+
+	public void printGroupSubject(int index) {
+		Subject tmpSub=subjects.get(index);
+		tmpSub.print();
 	}
 }

@@ -2,23 +2,23 @@ package schoolschedule;
 
 public class Room {
 
-	private static int number;
+	private int number;
 	
 	public Room(int number) {
 		super();
 		this.number = number;
 	}
 
-	public static int getRoomNumber() {
+	public int getRoomNumber() {
 		return number;
 	}
 
-	public static void setRoomNumber(int number) {
-		Room.number = number;
+	public void setRoomNumber(int number) {
+		this.number = number;
 	}
 
-	public static void print() {
-		System.out.println(number);
+	public void print() {
+		System.out.print(number);
 		
 	}
 
