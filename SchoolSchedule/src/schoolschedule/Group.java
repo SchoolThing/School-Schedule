@@ -1,5 +1,6 @@
 package schoolschedule;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
@@ -25,8 +26,8 @@ public class Group {
 		return subjects;
 	}
 
-	public void setSubjects(List<Subject> subjects) {
-		this.subjects = subjects;
+	public void setSubjects(List<Subject> subs) {
+		this.subjects = new ArrayList<Subject>(subs);
 	}
 	
 	public void setSubject(int index, Subject sub){

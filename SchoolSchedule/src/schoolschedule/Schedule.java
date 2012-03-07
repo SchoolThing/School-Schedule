@@ -37,19 +37,42 @@ public class Schedule {
 
 		List<Group> tmpGrps = new ArrayList<Group>(scl.getClassGroups());
 
-		for (int i = 0; i < sub.size() - 1; i++) {
-			for (int j = 0; j < tmpGrps.size() - 1; j++) {
-				if (tmpGrps.get(j).getSubjects().get(i) == tmpGrps.get(j + 1)
-						.getSubjects().get(i)) {
-					Subject tmp = tmpGrps.get(j + 1).getSubjects().get(i);
-					Subject tmp2 = tmpGrps.get(j + 1).getSubjects().get(i + 1);
-					tmpGrps.get(j + 1).setSubject(i, tmp2);
-					tmpGrps.get(j + 1).setSubject(i + 1, tmp);
-				}
+		// for (int i = 0; i < sub.size() - 1; i++) {
+		// for (int j = 0; j < tmpGrps.size() - 1; j++) {
+		Group tmpGroup1 = tmpGrps.get(0);
+		Group tmpGroup2 = tmpGrps.get(1);
+		
+		List<Subject> subs = tmpGroup1.getSubjects();
+		List<Subject> subs2 = tmpGroup2.getSubjects();
 
-			}
+		Subject tmp = subs.get(0);
+		Subject tmp2 = subs2.get(0);
+		
+		if (tmp == tmp2) {
+			
+			Subject tmp3 = subs2.get(1);
+			Subject tmp4 = tmp3;
+			tmp3 = tmp2;
+			tmp2 = tmp4;
+			
+			subs2.set(0, tmp2);
+			subs2.set(1, tmp3);
+		
+			tmpGroup2.setSubjects(subs2);
 		}
-		scl.setClassGroups(tmpGrps);
-	}
+		
+		List<Group> tmpGrps2 = new ArrayList<Group>();
+		tmpGrps2.add(tmpGroup1);
+		tmpGrps2.add(tmpGroup2);
 
+		/*
+		 * tmpGrps.get(0).getSubjects().get(0).print();
+		 * tmpGrps.get(0).getSubjects().get(1).print();
+		 * tmpGrps.get(1).getSubjects().get(0).print();
+		 * tmpGrps.get(1).getSubjects().get(1).print();
+		 */
+		scl.setClassGroups(tmpGrps2);
+
+	}
+	// }
 }
