@@ -2,7 +2,11 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="tests"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+=======
+	<classpathentry kind="src" path="Test"/>
+>>>>>>> d160aec3d8a909e39640f77cf75960fb138e4c1d
 	<classpathentry kind="output" path="bin"/>
 </classpath>
