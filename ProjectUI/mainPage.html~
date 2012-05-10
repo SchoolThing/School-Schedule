@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title>School Project</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Desi Matoushek & Valery Poliakov" />
+	<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+			
+		<div id="user">
+			<h1>Name of user.</h1>
+		</div>
+		
+		<div id="Settings">
+		</div>
+		
+		<div class="tab_menu">
+			<div id="holder">
+				<ul>
+				<li><a href="8.html">8</a></li>
+				<li><a href="9.html">9</a></li>		
+				<li><a href="10.html">10</a></li>		
+				<li><a href="11.html">11</a></li>		
+				<li><a href="12.html">12</a></li>		
+				</ul>		
+			</div><!-- end of holder -->
+		</div><!-- end of tab_menu-->
+		
+		
+	</div><!-- end of wrapper -->
+</body>
+</html>

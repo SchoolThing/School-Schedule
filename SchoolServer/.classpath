@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0 (4)">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.ui.ide_3.7.0.v20110928-1505.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.app_1.3.100.v20110321.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.preferences_3.4.2.v20120111-2020.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.commands_3.6.0.I20110111-0800.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.jobs_3.5.101.v20120113-1953.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.contenttype_3.4.100.v20110423-0524.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/javax.transaction_1.1.1.v201105210645.jar"/>
+	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.jface_3.7.0.v20110928-1505.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
