@@ -1,0 +1,146 @@
+/*
+	Name: SchoolSchedule
+	Description: School Schedule
+	Author: Desi Matoushek & Valery Poliakov 	
+	Started: 15.02.2012
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Arial, Tahoma, Sans-serif;
+}
+
+body {
+	background-image: url(../Images/paper_2.png);
+	background-color: #fff;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+}
+
+#user {
+	border: 2px solid;
+	border-color: #9a6698;
+	border-radius: 5px;
+	background-color: #fff;
+	height: 50px;
+	width: 200px;
+	margin-top: 20px;
+}
+
+.nav {
+	width: 800px;
+	margin-bottom: 18px;
+	margin-left: 0;
+	list-style: none;
+	height: 64px;
+	border-bottom: 2px solid #9a6698 no-repeat;
+	padding-left: 25px;
+	margin-top: 30px;
+}
+
+.nav>li>a {
+	display: block;
+}
+
+.nav>li>a:hover {
+	text-decoration: none;
+	color:#fff;
+	background-color: #9a6698;
+}
+
+.nav-tabs {
+	width: 800px;
+	border-bottom: 2px solid #9a6698;
+}
+
+.nav-tabs>li {
+	margin-bottom: -1px;
+}
+
+.nav-tabs>li>a {
+	
+	text-decoration: none;
+	font-size: 22px;
+	float: left;
+	margin-right: 25px;
+	margin-top: 33px;
+	line-height: 10px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #000;
+	background-color: #fff;
+	border: 2px solid #9a6698 ;
+	border-bottom: none;
+	padding: 10px;
+	width: 90px;
+	text-align: center;
+	display: block;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-left-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+}
+
+.nav-tabs>li>a:hover {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.nav-tabs>.active>a,
+.nav-tabs>.active>a:hover {
+	cursor: default;
+	color: #fff;
+	background-color: #9a6698;
+	border: 2px solid #9a6698;
+	border-bottom: none;
+}
+
+.tab-content {
+	overflow: auto;
+}
+
+.tab-content>
+.tab-pane,
+.pill-content>
+.pill-pane {
+	display: none;
+}
+
+.tab-content>.active,
+.pill-content>.active {
+	display: block;
+}
+
+.nav-pills>li>a {
+	width: 65px;
+	height: 25px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	font-size: 22px;
+	float: left;
+	margin-top: -15px;
+	margin-left: 55px;
+	background-color: #fff;
+	border: 1px solid #9a6698;
+	border-radius: 5px;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover {
+	color: #fff;
+	text-decoration: none; 
+	background-color: #9a6698;
+	border: 1px solid #9a6698;
+}
+.nav-pills>li>a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #9a6698;
+}

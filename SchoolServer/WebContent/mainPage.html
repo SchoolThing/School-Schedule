@@ -2,38 +2,62 @@
 
 <html>
 <head>
-	<title>School Project</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Desi Matoushek & Valery Poliakov" />
-	<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
-
-
-
+<title>School Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Desi Matoushek & Valery Poliakov" />
+<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 
 <body>
 	<div class="wrapper">
-			
+
 		<div id="user">
-			<h1>Name of user.</h1>
+			<h1>Kiril Mitov</h1>
 		</div>
-		
+
 		<div id="Settings">
+			<h1>Settings.</h1>
 		</div>
-		
-		<div class="tab_menu">
-			<div id="holder">
-				<ul>
-				<li><a href="8.html">8</a></li>
-				<li><a href="9.html">9</a></li>		
-				<li><a href="10.html">10</a></li>		
-				<li><a href="11.html">11</a></li>		
-				<li><a href="12.html">12</a></li>		
-				</ul>		
-			</div><!-- end of holder -->
-		</div><!-- end of tab_menu-->
-		
-		
-	</div><!-- end of wrapper -->
+
+		<ul class="nav nav-tabs" id="myTab">
+			<li class="active"><a href="#8" data-toggle="tab">8</a></li>
+			<li><a href="#9" data-toggle="tab">9</a></li>
+			<li><a href="#10" data-toggle="tab">10</a></li>
+			<li><a href="#11" data-toggle="tab">11</a></li>
+			<li><a href="#12" data-toggle="tab">12</a></li>
+		</ul>
+
+
+		<div id="tab-content">
+			<div class="tab-pane active" id="8">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#А">A</a>
+					</li>
+					<li><a href="#Б">Б</a>
+					</li>
+					<li><a href="#В">В</a>
+					</li>
+					<li><a href="#Г">Г</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pill-content">
+			<div class="pill-pane" id="A"></div>
+			<div class="pill-pane" id="Б"></div>
+			<div class="pill-pane" id="В"></div>
+			<div class="pill-pane" id="Г"></div>
+
+		</div>
+
+	</div>
+	<!-- end of wrapper -->
+	<script>
+		$(function() {
+			$('#myTab a[href="#8"]').tab('show');
+		})
+	</script>
 </body>
 </html>
