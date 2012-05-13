@@ -14,7 +14,7 @@
 
 	<div class="wrapper">
 		<div id="LogInForm">
-			<form action="/login" id="form">
+			<form action="/Login" id="form">
 				<ul>
 					<li>User name: <input type="text" id="name" name="Username" /><br />
 					</li>

@@ -26,6 +26,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>SchoolServer</servlet-name>
-    <url-pattern>/Login</url-pattern>
+    <url-pattern>/login</url-pattern>
   </servlet-mapping>
 </web-app>
