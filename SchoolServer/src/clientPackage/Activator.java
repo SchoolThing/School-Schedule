@@ -1,4 +1,4 @@
-package clientPackage;
+package schedule;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;

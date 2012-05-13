@@ -1,17 +1,23 @@
-package clientPackage;
-
+package schedule;
 
 public class Subject {
 
 	private String name;
-	private Room room;
-	private Teacher teacher;
+	private String teacher;
+	private int room;
+	private int from;
+	private int to;
+	private int day;
 
-	public Subject(String name, Room room, Teacher teacher) {
+	public Subject(String name, String teacher, int room, int from, int to,
+			int day) {
 		super();
 		this.name = name;
-		this.room = room;
 		this.teacher = teacher;
+		this.room = room;
+		this.from = from;
+		this.to = to;
+		this.day = day;
 	}
 
 	public String getName() {
@@ -22,24 +28,43 @@ public class Subject {
 		this.name = name;
 	}
 
-	public Room getRoom() {
-		return room;
-	}
-
-	public void setRoom(Room room) {
-		this.room = room;
-	}
-
-	public Teacher getTeacher() {
+	public String getTeacher() {
 		return teacher;
 	}
 
-	public void setTeacher(Teacher teacher) {
+	public void setTeacher(String teacher) {
 		this.teacher = teacher;
 	}
 
-	public void print() {
-		System.out.print(name + " " + room.getRoomNumber() + " "+ teacher.getName() + "\t  ");
+	public int getRoom() {
+		return room;
 	}
 
+	public void setRoom(int room) {
+		this.room = room;
+	}
+
+	public int getFrom() {
+		return from;
+	}
+
+	public void setFrom(int from) {
+		this.from = from;
+	}
+
+	public int getTo() {
+		return to;
+	}
+
+	public void setTo(int to) {
+		this.to = to;
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public void setDay(int day) {
+		this.day = day;
+	}
 }
