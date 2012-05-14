@@ -18,14 +18,14 @@
          - Servlet and JSP programming tutorials: http://courses.coreservlets.com/Course-Materials/csajsp2.html
   -->
   
-  <!-- Use the URL http://localhost:8181/SchoolServer/Login for
+  <!-- Use the URL http://localhost:8181/SchoolServer/ for
        serverPackage.Login -->
-  <servlet>
+ <!--  <servlet>
     <servlet-name>SchoolServer</servlet-name>
     <servlet-class>serverPackage.Login</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SchoolServer</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
+    <url-pattern>/Log</url-pattern>
+  </servlet-mapping>-->
 </web-app>

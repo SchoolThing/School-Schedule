@@ -10,7 +10,7 @@ public class ConnectionManager {
 	
 	public static Connection getConnection() { 
 		try { 
-			String url = "jdbc:derby:" + "Програма"; // assuming "DataSource" is your DataSource name 
+			String url = "jdbc:derby:" + "users"; // assuming "DataSource" is your DataSource name 
 			Class.forName("org.apache.derby.jdbc.ClientDriver"); 
 			try { 
 				con = DriverManager.getConnection(url,"desi","admin"); // assuming your SQL Server's username is "username" // and password is "password" 

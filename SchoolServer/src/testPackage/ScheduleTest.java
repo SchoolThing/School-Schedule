@@ -1,4 +1,4 @@
-package scheduleTests.scheduleTests;
+package testPackage;
 
 import static org.junit.Assert.*;
 
@@ -6,13 +6,13 @@ import java.util.List;
 
 import org.junit.Test;
 
-import exceptions.ConflictOccuredException;
+import clientPackage.ConflictOccuredException;
 
-import schedule.Group;
-import schedule.Schedule;
-import schedule.School;
-import schedule.SchoolClass;
-import schedule.Subject;
+import clientPackage.Group;
+import clientPackage.Schedule;
+import clientPackage.School;
+import clientPackage.SchoolClass;
+import clientPackage.Subject;
 
 public class ScheduleTest {
 

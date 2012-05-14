@@ -1,4 +1,4 @@
-package schedule;
+package clientPackage;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import exceptions.ConflictOccuredException;
+import clientPackage.ConflictOccuredException;
 
 public class Schedule {
 
