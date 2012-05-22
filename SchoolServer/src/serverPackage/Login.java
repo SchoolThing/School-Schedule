@@ -14,21 +14,28 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/Login")
 public class Login extends HttpServlet {
+	private User user = new User();
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, java.io.IOException {
-	try {		
-			User user = new User();
+		try {
 			user.setUserName(request.getParameter("Username"));
 			user.setPassword(request.getParameter("Password"));
 			user = UserDAO.login(user);
-			
+
 			if (user.isValid()) {
 				HttpSession session = request.getSession(true);
-				session.setAttribute("currentSessionUser", user);
 				response.sendRedirect("mainPage.html"); // logged-in page
 			} else
-				response.sendRedirect("Invalid data! Try again."); // error page
+				response.sendRedirect("error.html"); // error page 
 		} catch (Throwable theException) {
 			System.out.println(theException);
 		}

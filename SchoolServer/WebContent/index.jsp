@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>SchoolServer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Desi Matoushek & Valery Poliakov" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div id="LogInForm">
+			<form action="/SchoolServer/Login" id="loginForm">
+				<ul>
+					<li>Username: <input type="text" id="name" name="Username" /><br />
+					</li>
+					<li>Password: <input type="password" id="pass" name="Password" /><br />
+						<input type="submit" id="logbutton" value="Log In" /></li>
+				</ul>
+			</form>
+			<img src="Images/user-accounts.png" id="userIcon" width="220"
+				height="220" />
+
+		</div>
+		<!--end of LogInForm-->
+	</div>
+	<!--end of wrapper-->
+</body>
+</html>

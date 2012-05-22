@@ -32,10 +32,6 @@
   $('#myTab a').click(function (e) {
 	    e.preventDefault();
 	    $('#myTab a[href="#8"]').tab('show');
-	    $('#myTab a[href="#9"]').tab('show');
-	    $('#myTab a[href="#10"]').tab('show');
-	    $('#myTab a[href="#11"]').tab('show');
-	    $('#myTab a[href="#12"]').tab('show');
 	    })
  
   Tab.prototype = {
@@ -137,10 +133,6 @@
     $('body').on('click.tab.data-api', '[data-toggle="tab"], [data-toggle="pill"]', function (e) {
       e.preventDefault()
       $('#myTab a[href="#8"]').tab('show');
-	    $('#myTab a[href="#9"]').tab('show');
-	    $('#myTab a[href="#10"]').tab('show');
-	    $('#myTab a[href="#11"]').tab('show');
-	    $('#myTab a[href="#12"]').tab('show');
     })
   })
   $('a[data-toggle="tab"]').on('shown', function (e) {
