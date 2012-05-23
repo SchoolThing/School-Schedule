@@ -9,11 +9,11 @@ public class UserDAO {
 	static Connection currentCon = null;
 	static ResultSet rs = null;
 
-	public static User login(User bean) {
+	public static User login(User name) {
 		// preparing some objects for connection
 		Statement stmt = null;
-		String username = bean.getUsername();
-		String password = bean.getPassword();
+		String username = name.getUsername();
+		String password = name.getPassword();
 		String searchQuery = "select * from users where username='" + username
 				+ "' AND password='" + password + "'";
 		// "System.out.println" prints in the console; Normally used to trace
@@ -29,15 +29,15 @@ public class UserDAO {
 										// variable to false
 			if (!more) {
 				System.out.println("Sorry, you are not a registered user! ");
-				bean.setValid(false);
+				name.setValid(false);
 			} // if user exists set the isValid variable to true
 			else if (more) {
 				String firstName = rs.getString("FirstName");
 				String lastName = rs.getString("LastName");
 				System.out.println("Welcome " + firstName);
-				bean.setFirstName(firstName);
-				bean.setLastName(lastName);
-				bean.setValid(true);
+				name.setFirstName(firstName);
+				name.setLastName(lastName);
+				name.setValid(true);
 			}
 		} catch (Exception ex) {
 			System.out.println("Log In failed: An Exception has occurred! "
@@ -66,6 +66,6 @@ public class UserDAO {
 				currentCon = null;
 			}
 		}
-		return bean;
+		return name;
 	}
 }

@@ -52,7 +52,7 @@ body {
 
 .nav>li>a:hover {
 	text-decoration: none;
-	color:#fff;
+	color: #fff;
 	background-color: #9a6698;
 }
 
@@ -66,7 +66,6 @@ body {
 }
 
 .nav-tabs>li>a {
-	
 	text-decoration: none;
 	font-size: 22px;
 	float: left;
@@ -76,7 +75,7 @@ body {
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: #000;
 	background-color: #fff;
-	border: 2px solid #9a6698 ;
+	border: 2px solid #9a6698;
 	border-bottom: none;
 	padding: 10px;
 	width: 90px;
@@ -92,8 +91,7 @@ body {
 	text-shadow: 1px 1px 1px #000;
 }
 
-.nav-tabs>.active>a,
-.nav-tabs>.active>a:hover {
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover {
 	cursor: default;
 	color: #fff;
 	background-color: #9a6698;
@@ -105,15 +103,11 @@ body {
 	overflow: auto;
 }
 
-.tab-content>
-.tab-pane,
-.pill-content>
-.pill-pane {
+.tab-content>.tab-pane,.pill-content>.pill-pane {
 	display: none;
 }
 
-.tab-content>.active,
-.pill-content>.active {
+.tab-content>.active,.pill-content>.active {
 	display: block;
 }
 
@@ -132,13 +126,13 @@ body {
 	border-radius: 5px;
 }
 
-.nav-pills>.active>a,
-.nav-pills>.active>a:hover {
+.nav-pills>.active>a,.nav-pills>.active>a:hover {
 	color: #fff;
-	text-decoration: none; 
+	text-decoration: none;
 	background-color: #9a6698;
 	border: 1px solid #9a6698;
 }
+
 .nav-pills>li>a:hover {
 	text-decoration: none;
 	color: #fff;

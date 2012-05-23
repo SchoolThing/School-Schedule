@@ -4,20 +4,8 @@
 	Author: Desi Matoushek & Valery Poliakov 	
 	Started: 15.02.2012
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -25,20 +13,19 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-family: Arial, Tahoma, Sans-serif;
-} 
+}
 
-body{
+body {
 	background-image: url(../Images/paper_2.png);
 	background-color: #fff;
-	
 }
 
 .wrapper {
-	width: 960px; 
+	width: 960px;
 	margin: 0px auto;
 }
 
-#user{
+#user {
 	border: 2px solid;
 	border-color: #9a6698;
 	border-radius: 5px;
@@ -46,14 +33,15 @@ body{
 	height: 50px;
 	width: 200px;
 	margin-top: 20px;
-
 }
-#user h1{
+
+#user h1 {
 	margin-top: 15px;
 	margin-left: 40px;
 	font-size: 22px;
 }
-#Settings{
+
+#Settings {
 	height: 50px;
 	width: 350px;
 	background-color: #9a6698;
@@ -64,13 +52,41 @@ body{
 	margin-top: -50px;
 }
 
-#Settings h1{
+#Settings h1 {
 	margin-top: 15px;
 	margin-left: 40px;
 	color: #fff;
 }
 
+#ver-minimalist {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 18px;
+	margin-top: 40px;
+	padding-right: 30px;
+	float:left;
+	width: 800px;
+	text-align: center;
+	border-collapse: collapse;
+	/*border-bottom: 2px solid #9a6698;*/ 
+}
 
+#ver-minimalist th {
+	padding: 8px 2px;
+	font-weight: normal;
+	font-size:18px;
+	border-bottom: 2px solid #9a6698;
+	border-right: 3px solid #9a6698;
+	border-left: 3px solid #9a6698;
+	/*border-top: 3px solid #9a6698;*/
+	color: #000;
 
+}
 
-
+#ver-minimalist td {
+	padding: 12px 10px 0px 0px;
+	
+	height: 50px;	
+	border-right: 3px solid #9a6698;
+	border-left: 3px solid #9a6698;
+	color: #000 ;
+}

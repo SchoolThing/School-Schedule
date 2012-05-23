@@ -1,4 +1,4 @@
-package schedule;
+package clientPackage;
 
 public class Subject {
 

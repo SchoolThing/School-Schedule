@@ -1,4 +1,4 @@
-package exceptions;
+package clientPackage;
 
 public class ConflictOccuredException extends Exception {
 
