@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public abstract class AbstConnect {
 
-	protected static String dbURL = "jdbc:derby:/home/brym/Desktop/derby/bin/SchoolSchedule";
+	protected static String dbURL = "jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule";
 	protected static String tableName = "teachers";
 
 	protected static Connection conn = null;

@@ -33,9 +33,9 @@ public class Login extends HttpServlet {
 
 			if (user.isValid()) {
 				HttpSession session = request.getSession(true);
-				response.sendRedirect("mainPage.html"); // logged-in page
+				response.sendRedirect("mainPage.jsp"); // logged-in page
 			} else
-				response.sendRedirect("error.html"); // error page 
+				response.sendRedirect("error.jsp"); // error page 
 		} catch (Throwable theException) {
 			System.out.println(theException);
 		}

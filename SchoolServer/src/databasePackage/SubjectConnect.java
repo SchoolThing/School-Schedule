@@ -125,14 +125,24 @@ public class SubjectConnect extends AbstConnect {
 
 	public static void main(String[] args) {
 		AbstConnect
+<<<<<<< HEAD
 				.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
+=======
+				.setDbURL("jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule");
+>>>>>>> 808e7cbd5d97b6fb89fc610f34c8624a7d4e8e57
 		AbstConnect.setConn(null);
 		AbstConnect.setStmt(null);
 		AbstConnect.setTableName("subjects");
 		createConnection();
+<<<<<<< HEAD
 //		insertSubject("BEL", 4, 5, 2, 2, 2);
 //		updateSubject(23, "TP", 6, 7, 3, 3, 3);
 		HashMap<String, String> sub = getSubject(25);
+=======
+	//	insertSubject("Biology", 4, 5, 2, 2, 2);
+		//updateSubject(43, "TP", 6, 7, 3, 3, 3);
+		HashMap<String, String> sub = getSubject(44);
+>>>>>>> 808e7cbd5d97b6fb89fc610f34c8624a7d4e8e57
 		System.out.println(sub.get("name"));
 		shutdown();
 	}
