@@ -8,21 +8,41 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar"/>
-	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.ui.ide_3.7.0.v20110928-1505.jar"/>
-	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar"/>
-	<classpathentry exported="true" kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.app_1.3.100.v20110321.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.preferences_3.4.2.v20120111-2020.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.commands_3.6.0.I20110111-0800.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.jobs_3.5.101.v20120113-1953.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.core.contenttype_3.4.100.v20110423-0524.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/javax.transaction_1.1.1.v201105210645.jar"/>
-	<classpathentry kind="lib" path="/home/desi/Desktop/eclipse/plugins/org.eclipse.jface_3.7.0.v20110928-1505.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/javax.transaction_1.1.0.v201002051055.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/javax.annotation_1.1.1.v201006150915.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.core.commands_3.6.0.I20110111-0800.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.core.contenttype_3.4.100.v20110423-0524.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.core.jobs_3.5.100.v20110404.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.core.runtime_3.7.0.v20110110.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.equinox.app_1.3.100.v20110321.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.equinox.common_3.6.0.v20110523.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.equinox.preferences_3.4.2.v20120111-2020.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.jface_3.7.0.I20110522-1430.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.osgi_3.7.2.v20120110-1415.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/org.eclipse.ui.ide_3.7.0.v20110809-1737.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/eclipse/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/eclipse/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/eclipse/plugins/org.eclipse.core.runtime.compatibility_3.2.100.v20100505.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/js.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/nekohtml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/Tidy.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.6/jars/xmlParserAPIs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/js-1.6R5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/jtidy-4aug2000r7-dev.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/nekohtml-0.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/xercesImpl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/httpunit-1.7/jars/xmlParserAPIs-2.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lumnatiq/Desktop/JEE Eclipse/jars/javax.servlet-api-3.0.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

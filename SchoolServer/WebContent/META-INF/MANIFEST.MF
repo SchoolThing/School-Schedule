@@ -4,7 +4,7 @@ Bundle-Name: SchoolSchedule
 Bundle-SymbolicName: SchoolServer
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: serverPackage.Activator
-Require-Bundle: org.eclipse.ui,
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
  org.eclipse.core.runtime,
  org.junit
 Bundle-ActivationPolicy: lazy

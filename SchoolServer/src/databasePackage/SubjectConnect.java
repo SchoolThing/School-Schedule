@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SubjectConnect extends AbstConnect {
-
+	
 	public static void insertSubject(String name, int from, int to, int day,
 			int teacherID, int scheduleID) {
 		try {
@@ -125,14 +125,14 @@ public class SubjectConnect extends AbstConnect {
 
 	public static void main(String[] args) {
 		AbstConnect
-				.setDbURL("jdbc:derby:/home/brym/Desktop/derby/bin/SchoolSchedule");
+				.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
 		AbstConnect.setConn(null);
 		AbstConnect.setStmt(null);
 		AbstConnect.setTableName("subjects");
 		createConnection();
-		insertSubject("BEL", 4, 5, 2, 2, 2);
-		updateSubject(23, "TP", 6, 7, 3, 3, 3);
-		HashMap<String, String> sub = getSubject(23);
+//		insertSubject("BEL", 4, 5, 2, 2, 2);
+//		updateSubject(23, "TP", 6, 7, 3, 3, 3);
+		HashMap<String, String> sub = getSubject(25);
 		System.out.println(sub.get("name"));
 		shutdown();
 	}

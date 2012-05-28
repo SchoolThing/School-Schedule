@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<%@ page import="databasePackage.SubjectConnect" %>
+<%@ page import="databasePackage.AbstConnect" %>
+<%@ page import="java.util.HashMap" %>
 <html>
 <head>
 <title>School Project</title>
@@ -33,7 +35,6 @@
 			</li>
 		</ul>
 
-
 		<div id="tab-content">
 			<div class="tab-pane active" id="8">
 				<ul class="nav nav-pills">
@@ -50,7 +51,18 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>Scary Movie</td>
+									<td><%
+										AbstConnect
+												.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
+										AbstConnect.setConn(null);
+										AbstConnect.setStmt(null);
+										AbstConnect.setTableName("subjects");
+										SubjectConnect.createConnection();
+									%> 
+									<%! HashMap<String,String> hs; %>
+									<% hs = SubjectConnect.getSubject(21); %>
+									<%= hs.get("name") %>
+									</td>
 									<td>Indiana Jones</td>
 									<td>The Punisher</td>
 									<td>Wall-E</td>

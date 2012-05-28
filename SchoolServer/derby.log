@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri May 25 01:06:28 EEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0137-80e2-fc54-000003157b80 
+on database directory C:\Users\Lumnatiq\Desktop\db-derby-10.8.1.2-bin\bin\SchoolSchedule  with class loader sun.misc.Launcher$AppClassLoader@35489ea3 
+Loaded from file:/C:/Users/Lumnatiq/SchoolServerProject/School-Schedule/SchoolServer/WebContent/WEB-INF/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_02-b13
+user.dir=C:\Users\Lumnatiq\SchoolServerProject\School-Schedule\SchoolServer
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri May 25 01:06:29 EEST 2012:
+Shutting down instance a816c00e-0137-80e2-fc54-000003157b80 on database directory C:\Users\Lumnatiq\Desktop\db-derby-10.8.1.2-bin\bin\SchoolSchedule with class loader sun.misc.Launcher$AppClassLoader@35489ea3 
