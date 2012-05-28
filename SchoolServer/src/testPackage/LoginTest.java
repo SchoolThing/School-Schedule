@@ -29,28 +29,28 @@ public class LoginTest {
 	public static final String ADDRESS = "http://localhost:8181/SchoolServer/";
 	public static HttpServletRequest req;
 	public static HttpServletResponse resp;
+	public static HttpSession session;
 	private String Username;
 	private String Password;
 	private String form;
 	private Login login;
 
-
+	
 	@Test
 	public void testUserData() throws IOException, SAXException, ServletException {
 		createFixture();
-		User user = new User();
-		user.setUserName("desi");
-		user.setPassword("admin");
-		login.doGet(req,resp);
-		//req.getAttribute(ADDRESS);
-		//resp.sendRedirect("mainPage.html");
-		assertEquals("desi",user.getUsername());
-		assertEquals("admin",user.getPassword());
+		req.setAttribute("Username", "desi");
+		req.setAttribute("Password", "admin");
+		resp.getContentType();
 		
-	
+		login.doGet(req,resp);
+		
+		assertEquals("mainPage.jsp",resp.getContentType());
+		assertEquals("error.jsp",resp.getContentType());
 	}	
 	
 	public void createFixture(){
 		Login login= new Login();
+	
 	}
 }

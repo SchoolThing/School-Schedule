@@ -100,5 +100,18 @@ public class GroupConnect extends AbstConnect {
 			ex.printStackTrace();
 		}
 	}
+	public static void main(String[] args) {
+		AbstConnect
+				.setDbURL("jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule");
+		AbstConnect.setConn(null);
+		AbstConnect.setStmt(null);
+		AbstConnect.setTableName("groups");
+		createConnection();
+		insertGroup("D", 4);
+		updateGroup(43, "TP", 6);
+		HashMap<String, String> sub = getGroup(3);
+		System.out.println(sub.get("name"));
+		shutdown();
+	}
 
 }

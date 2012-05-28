@@ -125,14 +125,14 @@ public class SubjectConnect extends AbstConnect {
 
 	public static void main(String[] args) {
 		AbstConnect
-				.setDbURL("jdbc:derby:/home/brym/Desktop/derby/bin/SchoolSchedule");
+				.setDbURL("jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule");
 		AbstConnect.setConn(null);
 		AbstConnect.setStmt(null);
 		AbstConnect.setTableName("subjects");
 		createConnection();
-		insertSubject("BEL", 4, 5, 2, 2, 2);
-		updateSubject(23, "TP", 6, 7, 3, 3, 3);
-		HashMap<String, String> sub = getSubject(23);
+	//	insertSubject("Biology", 4, 5, 2, 2, 2);
+		//updateSubject(43, "TP", 6, 7, 3, 3, 3);
+		HashMap<String, String> sub = getSubject(44);
 		System.out.println(sub.get("name"));
 		shutdown();
 	}

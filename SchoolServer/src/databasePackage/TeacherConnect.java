@@ -102,7 +102,7 @@ public class TeacherConnect extends AbstConnect{
 			ex.printStackTrace();
 		}
 	}
-}
+
 
 
 /*
@@ -115,7 +115,7 @@ public class TeacherConnect extends AbstConnect{
  *  update(id, value1, value2, value3);  
  * }
  */
-/*	public static void main(String[] args) {
+public static void main(String[] args) {
 		createConnection();
 		for (int i = 0; i < 10; i++)
 		insertTeacher("Pesho");
@@ -131,4 +131,4 @@ public class TeacherConnect extends AbstConnect{
 		
 		shutdown();
 	}
-*/
+}

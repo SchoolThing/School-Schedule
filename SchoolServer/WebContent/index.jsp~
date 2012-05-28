@@ -9,8 +9,8 @@
 
 </head>
 <body>
+	the time is now <%= new java.util.Date() %>
 	<div class="wrapper">
-		
 		<div id="LogInForm">
 			<form action="/SchoolServer/Login" id="loginForm">
 				<ul>
