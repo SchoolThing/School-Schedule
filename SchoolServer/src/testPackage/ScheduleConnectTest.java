@@ -19,7 +19,7 @@ public class ScheduleConnectTest {
 	protected static Connection conn = null;
 	protected static Statement stmt = null;
 	private String tableName = "schedule";
-	
+
 	@Test
 	public void testInsertSchedule() {
 		AbstConnect.createConnection();

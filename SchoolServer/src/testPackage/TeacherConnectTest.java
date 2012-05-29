@@ -19,14 +19,14 @@ public class TeacherConnectTest {
 	protected static Connection conn = null;
 	protected static Statement stmt = null;
 	private String tableName = "teachers";
-	
+
 	@Test
 	public void testInsertTeacher() {
 		AbstConnect.createConnection();
 		AbstConnect.setTableName(tableName);
-		TeacherConnect.insertTeacher("Abramovich");
-		HashMap<String,String> hs = TeacherConnect.getTeacher(15);
-		assertEquals("Abramovich",hs.get("name"));
+		TeacherConnect.insertTeacher("Teacher");
+		HashMap<String,String> hs = TeacherConnect.getTeacher(1);
+		assertEquals("Teacher",hs.get("name"));
 	}
 	@Test
 	public void testSelectTeacher(){
@@ -34,7 +34,7 @@ public class TeacherConnectTest {
 		AbstConnect.setTableName(tableName);
 		ArrayList<HashMap<String,String>> arr = TeacherConnect.selectTeachers();
 		String str = arr.get(0).get("name");
-		assertEquals("Pesho", str);
+		assertEquals("Teacher", str);
 	}
 	@Test
 	public void testUpdateTeacher() throws SQLException{
@@ -45,5 +45,5 @@ public class TeacherConnectTest {
 		stmt.close();
 		assertNotNull(res);
 	} 
-	
+
 }

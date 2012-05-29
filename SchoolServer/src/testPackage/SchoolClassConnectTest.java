@@ -19,7 +19,7 @@ public class SchoolClassConnectTest {
 	protected static Connection conn = null;
 	protected static Statement stmt = null;
 	private String tableName = "classes";
-	
+
 	@Test
 	public void testInsertClass() {
 		AbstConnect.createConnection();

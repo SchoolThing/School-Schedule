@@ -23,7 +23,7 @@ public class SubjectConnectTest {
 	protected static Statement stmt = null;
 	private String tableName = "subjects";
 
-	
+
 	@Test
 	public void testInsertSubjects() {
 		AbstConnect.createConnection();
@@ -49,8 +49,8 @@ public class SubjectConnectTest {
 		stmt.close();
 		assertNotNull(res);
 	}
-	
-	
-	
-	
+
+
+
+
 }

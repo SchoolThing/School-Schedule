@@ -19,7 +19,7 @@ public class GroupConnectTest {
 	protected static Connection conn = null;
 	protected static Statement stmt = null;
 	private String tableName = "groups";
-	
+
 	@Test
 	public void testInsertGroup() {
 		AbstConnect.createConnection();
@@ -32,7 +32,7 @@ public class GroupConnectTest {
 	public void testSelectGroup(){
 		AbstConnect.createConnection();
 		AbstConnect.setTableName(tableName);
-		ArrayList<HashMap<String,String>> arr = GroupConnect.selectGroup();
+		ArrayList<HashMap<String,String>> arr = GroupConnect.selectGroups();
 		String str = arr.get(0).get("name");
 		assertEquals("B", str);
 	}
