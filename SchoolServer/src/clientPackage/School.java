@@ -13,4 +13,8 @@ public class School {
 	public static List<SchoolClass> getClasses() {
 		return classes;
 	}
+
+	public static void clear() {
+		classes.clear();
+	}
 }

@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 public class SchoolClassConnect extends AbstConnect{
 
+	static String tableName = "classes";
+	
 	public static void insertClass(int number)
 	{
 		try

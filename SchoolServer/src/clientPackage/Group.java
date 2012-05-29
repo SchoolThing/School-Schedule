@@ -21,4 +21,8 @@ public class Group {
 	public char getGroupID() {
 		return groupID;
 	}
+
+	public void setSchedule(Schedule newSchedule) {
+		schedule = newSchedule;		
+	}
 }

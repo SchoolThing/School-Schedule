@@ -2,6 +2,7 @@
 <%@ page import="databasePackage.SubjectConnect" %>
 <%@ page import="databasePackage.AbstConnect" %>
 <%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.ArrayList" %>
 <html>
 <head>
 <title>School Project</title>
@@ -23,15 +24,15 @@
 		</div>
 
 		<ul class="nav nav-tabs" id="myTab">
-			<li class="active"><a href="#8" data-toggle="tab">8</a>
+			<li class="active"><a href="?class=8" data-toggle="tab">8</a>
 			</li>
-			<li><a href="#9" data-toggle="tab">9</a>
+			<li><a href="?class=9" data-toggle="tab">9</a>
 			</li>
-			<li><a href="#10" data-toggle="tab">10</a>
+			<li><a href="?class=10" data-toggle="tab">10</a>
 			</li>
-			<li><a href="#11" data-toggle="tab">11</a>
+			<li><a href="?class=11" data-toggle="tab">11</a>
 			</li>
-			<li><a href="#12" data-toggle="tab">12</a>
+			<li><a href="?class=12" data-toggle="tab">12</a>
 			</li>
 		</ul>
 
@@ -39,6 +40,7 @@
 			<div class="tab-pane active" id="8">
 				<ul class="nav nav-pills">
 					<li class="active"><a href="#А">A</a>
+						<form method="post" action="change-subjects" >
 						<table id="ver-minimalist" summary="Most Favorite Movies">
 							<thead>
 								<tr>
@@ -50,51 +52,45 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td><%
-										AbstConnect
-												.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
-										AbstConnect.setConn(null);
-										AbstConnect.setStmt(null);
-										AbstConnect.setTableName("subjects");
-										SubjectConnect.createConnection();
-									%> 
-									<%! HashMap<String,String> hs; %>
-									<% hs = SubjectConnect.getSubject(21); %>
-									<%= hs.get("name") %>
-									</td>
-									<td>Indiana Jones</td>
-									<td>The Punisher</td>
-									<td>Wall-E</td>
-									<td>Math</td>
+<%
+	AbstConnect
+			.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
+	AbstConnect.setConn(null);
+	AbstConnect.setStmt(null);
+	AbstConnect.setTableName("subjects");
+	SubjectConnect.createConnection();
+%>
+								<% for(int i = 0; i < 10; i++) { %>
+								<tr>													
+									<%! HashMap<String, String> monday; %>
+									<% monday = SubjectConnect.selectSubjectByHourAndDay(i, 1, 1); %>				
+									<td><input type="text" name="monday" value="<%= (monday.containsKey("name")) ? monday.get("name") : "" %>" /></td>
+									<%! HashMap<String, String> tuesday; %>
+									<% monday = SubjectConnect.selectSubjectByHourAndDay(i, 2, 1); %>				
+									<td><input type="text" name="tuesday" value="<%= (monday.containsKey("name")) ? monday.get("name") : "" %>" /></td>
+									<%! HashMap<String, String> wednesday; %>
+									<% monday = SubjectConnect.selectSubjectByHourAndDay(i, 3, 1); %>				
+									<td><input type="text" name="wednesday" value="<%= (monday.containsKey("name")) ? monday.get("name") : "" %>" /></td>
+									<%! HashMap<String, String> thursday; %>
+									<% monday = SubjectConnect.selectSubjectByHourAndDay(i, 4, 1); %>				
+									<td><input type="text" name="thursday" value="<%= (monday.containsKey("name")) ? monday.get("name") : "" %>" /></td>
+									<%! HashMap<String, String> friday; %>
+									<% monday = SubjectConnect.selectSubjectByHourAndDay(i, 5, 1); %>				
+									<td><input type="text" name="friday" value="<%= (monday.containsKey("name")) ? monday.get("name") : "" %>" /></td>
 								</tr>
-								<tr>
-									<td>Epic Movie</td>
-									<td>Star Wars</td>
-									<td>Bad Boys</td>
-									<td>Madagascar</td>
-									<td>History</td>
-								</tr>
-								<tr>
-									<td>Spartan</td>
-									<td>LOTR</td>
-									<td>Die Hard</td>
-									<td>Finding Nemo</td>
-									<td>BEL</td>
-								</tr>
-								<tr>
-									<td>Dr. Dolittle</td>
-									<td>The Mummy</td>
-									<td>300</td>
-									<td>A Bug's Life</td>
-									<td>Programirane</td>
-								</tr>
-							</tbody>
-						</table></li>
+								<% } %>
+							</tbody>							
+						</table>						
+						</li>			
+						
+			<% AbstConnect.shutdown(); %>			
 					<!-- <li><a href="#Б">Б</a></li>
 					<li><a href="#В">В</a></li>
 					<li><a href="#Г">Г</a></li> -->
 				</ul>
+				<input type="submit" value="Change subjects" />
+				<input type="hidden" name="scheduleID" value="1" />
+				</form>
 			</div>
 		</div>
 

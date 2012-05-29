@@ -9,11 +9,26 @@ import java.util.Set;
 import clientPackage.ConflictOccuredException;
 
 public class Schedule {
+	
+	private int ID;
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
 
 	private List<Subject> subjects;
 
 	public Schedule() {
 		super();
+		this.subjects = new ArrayList<Subject>();
+	}
+
+	public Schedule(int iD) {
+		super();
+		ID = iD;
 		this.subjects = new ArrayList<Subject>();
 	}
 

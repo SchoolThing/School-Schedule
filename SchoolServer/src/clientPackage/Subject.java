@@ -2,6 +2,7 @@ package clientPackage;
 
 public class Subject {
 
+	int ID;
 	private String name;
 	private String teacher;
 	private int room;
@@ -12,6 +13,18 @@ public class Subject {
 	public Subject(String name, String teacher, int room, int from, int to,
 			int day) {
 		super(); 
+		this.name = name;
+		this.teacher = teacher;
+		this.room = room;
+		this.from = from;
+		this.to = to;
+		this.day = day;
+	}
+	
+	public Subject(int ID, String name, String teacher, int room, int from, int to,
+			int day) {
+		super(); 
+		this.ID = ID;
 		this.name = name;
 		this.teacher = teacher;
 		this.room = room;
@@ -66,5 +79,9 @@ public class Subject {
 
 	public void setDay(int day) {
 		this.day = day;
+	}
+
+	public int getID() {
+		return ID;
 	}
 }

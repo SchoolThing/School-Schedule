@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 public class GroupConnect extends AbstConnect {
 	
+	static String tableName = "groups";
+	
 	public static void insertGroup(String name, int classID)
 	{
 		try
@@ -47,7 +49,7 @@ public class GroupConnect extends AbstConnect {
 		return null;
 	}
 	
-	public static ArrayList<HashMap<String, String>> selectGroup() {
+	public static ArrayList<HashMap<String, String>> selectGroups() {
 		try {
 			ArrayList<HashMap<String, String>> rows = new ArrayList<HashMap<String, String>>();
 			stmt = conn.createStatement();			
@@ -100,18 +102,33 @@ public class GroupConnect extends AbstConnect {
 			ex.printStackTrace();
 		}
 	}
-	public static void main(String[] args) {
-		AbstConnect
-				.setDbURL("jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule");
-		AbstConnect.setConn(null);
-		AbstConnect.setStmt(null);
-		AbstConnect.setTableName("groups");
-		createConnection();
-		insertGroup("D", 4);
-		updateGroup(43, "TP", 6);
-		HashMap<String, String> sub = getGroup(3);
-		System.out.println(sub.get("name"));
-		shutdown();
+	
+	public static ArrayList<HashMap<String, String>> selectGroup(int classID) {
+		try {
+			ArrayList<HashMap<String, String>> rows = new ArrayList<HashMap<String, String>>();
+			stmt = conn.createStatement();			
+			
+			ResultSet results = stmt.executeQuery("SELECT * FROM " + tableName + " WHERE classid="+classID);				
+			
+			while (results.next()) {
+				HashMap<String, String> row = new HashMap<String, String>();
+				
+				row.put("id", String.valueOf(results.getInt(1)));
+				row.put("name", results.getString(2));
+				row.put("classID", results.getString(3));
+				
+				rows.add(row);
+			}		
+			
+			results.close();
+			stmt.close();
+			
+			return rows;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return null;
 	}
 
 }

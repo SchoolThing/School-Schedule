@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TeacherConnect extends AbstConnect{
-
+	static String tableName = "teachers";
+	
 	public static void insertTeacher(String name)
 	{
 		try

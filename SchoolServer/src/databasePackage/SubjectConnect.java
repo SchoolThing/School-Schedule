@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SubjectConnect extends AbstConnect {
+	static String tableName = "subjects";
 	
 	public static void insertSubject(String name, int from, int to, int day,
 			int teacherID, int scheduleID) {
@@ -73,7 +74,7 @@ public class SubjectConnect extends AbstConnect {
 				row.put("tohour", String.valueOf(results.getInt(4)));
 				row.put("day", String.valueOf(results.getInt(5)));
 				row.put("teacherID", String.valueOf(results.getInt(6)));
-				row.put("schoolID", String.valueOf(results.getInt(7)));
+				row.put("scheduleID", String.valueOf(results.getInt(7)));
 
 				rows.add(row);
 			}
@@ -82,6 +83,35 @@ public class SubjectConnect extends AbstConnect {
 			stmt.close();
 
 			return rows;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+
+		return null;
+	}
+	
+	public static HashMap<String, String> selectSubjectByHourAndDay(int hour, int day, int scheduleID) {
+		try {
+			stmt = conn.createStatement();
+
+			ResultSet results = stmt.executeQuery("SELECT * FROM " + tableName + " WHERE "+hour+" BETWEEN fromhour AND tohour AND day="+day+" AND scheduleID="+scheduleID);
+
+			HashMap<String, String> row = new HashMap<String, String>();
+			
+			while (results.next()) {			
+				row.put("id", String.valueOf(results.getInt(1)));
+				row.put("name", results.getString(2));
+				row.put("fromhour", String.valueOf(results.getInt(3)));
+				row.put("tohour", String.valueOf(results.getInt(4)));
+				row.put("day", String.valueOf(results.getInt(5)));
+				row.put("teacherID", String.valueOf(results.getInt(6)));
+				row.put("schedulelID", String.valueOf(results.getInt(7)));
+			}
+
+			results.close();
+			stmt.close();
+
+			return row;
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		}
@@ -123,27 +153,36 @@ public class SubjectConnect extends AbstConnect {
 		}
 	}
 
-	public static void main(String[] args) {
-		AbstConnect
-<<<<<<< HEAD
-				.setDbURL("jdbc:derby:C:\\Users\\Lumnatiq\\Desktop\\db-derby-10.8.1.2-bin\\bin\\SchoolSchedule");
-=======
-				.setDbURL("jdbc:derby:/home/desi/Desktop/derby/bin/SchoolSchedule");
->>>>>>> 808e7cbd5d97b6fb89fc610f34c8624a7d4e8e57
-		AbstConnect.setConn(null);
-		AbstConnect.setStmt(null);
-		AbstConnect.setTableName("subjects");
-		createConnection();
-<<<<<<< HEAD
-//		insertSubject("BEL", 4, 5, 2, 2, 2);
-//		updateSubject(23, "TP", 6, 7, 3, 3, 3);
-		HashMap<String, String> sub = getSubject(25);
-=======
-	//	insertSubject("Biology", 4, 5, 2, 2, 2);
-		//updateSubject(43, "TP", 6, 7, 3, 3, 3);
-		HashMap<String, String> sub = getSubject(44);
->>>>>>> 808e7cbd5d97b6fb89fc610f34c8624a7d4e8e57
-		System.out.println(sub.get("name"));
-		shutdown();
+	public static ArrayList<HashMap<String, String>> selectSubjects(
+			int scheduleID) {
+		try {
+			ArrayList<HashMap<String, String>> rows = new ArrayList<HashMap<String, String>>();
+			stmt = conn.createStatement();
+
+			ResultSet results = stmt.executeQuery("SELECT * FROM " + tableName + " WHERE scheduleid="+scheduleID);
+
+			while (results.next()) {
+				HashMap<String, String> row = new HashMap<String, String>();
+
+				row.put("id", String.valueOf(results.getInt(1)));
+				row.put("name", results.getString(2));
+				row.put("fromhour", String.valueOf(results.getInt(3)));
+				row.put("tohour", String.valueOf(results.getInt(4)));
+				row.put("day", String.valueOf(results.getInt(5)));
+				row.put("teacherID", String.valueOf(results.getInt(6)));
+				row.put("scheduleID", String.valueOf(results.getInt(7)));
+
+				rows.add(row);
+			}
+
+			results.close();
+			stmt.close();
+
+			return rows;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+
+		return null;
 	}
 }

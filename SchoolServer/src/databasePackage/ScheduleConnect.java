@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ScheduleConnect extends AbstConnect{
-
+	static String tableName = "schedule";
+	
 	public static void insertSchedule(int groupID)
 	{
 		try
@@ -97,6 +98,28 @@ public class ScheduleConnect extends AbstConnect{
 		{
 			ex.printStackTrace();
 		}
+	}
+	public static HashMap<String, String> selectSchedule(int groupID) {
+		try {
+			HashMap<String, String> row = new HashMap<String, String>();
+			stmt = conn.createStatement();			
+			
+			ResultSet results = stmt.executeQuery("SELECT * FROM " + tableName + " WHERE groupid="+groupID);				
+			
+			while (results.next()) {								
+				row.put("id", String.valueOf(results.getInt(1)));
+				row.put("groupID", String.valueOf(results.getInt(2)));
+			}		
+			
+			results.close();
+			stmt.close();
+			
+			return row;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		
+		return null;
 	}
 	
 }
